@@ -47,7 +47,11 @@ namespace Inventory.Migrations
 
             context.Attachments.AddOrUpdate(
                 a => a.AttachmentId,
-                new Attachment { AttachmentId = 1, AttachmentNum = 193, AttachmentMake = "CAT", AttachmentModel = "24 in bucket", Status = false, TypeId = 4 });
+                new Attachment { AttachmentId = 1, AttachmentNum = 193, AttachmentMake = "CAT", AttachmentModel = "24 in bucket", Status = false, TypeId = 4 },
+                new Attachment { AttachmentId = 2, AttachmentNum = 133, AttachmentMake = "Allied", AttachmentModel = "AR160", Status = false, TypeId = 5 },
+                new Attachment { AttachmentId = 3, AttachmentNum = 143, AttachmentMake = "AIM", AttachmentModel = "36 in bucket", Status = false, TypeId = 4 }
+
+                );
  
 
               

@@ -29,6 +29,6 @@ namespace Inventory.Models
         public string Photo { get; set; }
 
 
-        public virtual AttachmentType MachineType { get; set; }
+        public virtual MachineType MachineType { get; set; }
     }
 }

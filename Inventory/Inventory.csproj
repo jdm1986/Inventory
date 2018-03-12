@@ -189,6 +189,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AttachmentController.cs" />
     <Compile Include="Controllers\MachineController.cs" />
     <Compile Include="Migrations\201803112354599_moved-data-models.cs" />
     <Compile Include="Migrations\201803112354599_moved-data-models.Designer.cs">
@@ -198,8 +199,15 @@
     <Compile Include="Migrations\201803120002475_added-key-attributes.Designer.cs">
       <DependentUpon>201803120002475_added-key-attributes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803120144211_attachment-tables.cs" />
+    <Compile Include="Migrations\201803120144211_attachment-tables.Designer.cs">
+      <DependentUpon>201803120144211_attachment-tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Attachment.cs" />
     <Compile Include="Models\Machine.cs" />
+    <Compile Include="Models\AttachmentListViewModel.cs" />
     <Compile Include="Models\MachineListViewModel.cs" />
+    <Compile Include="Models\AttachmentType.cs" />
     <Compile Include="Models\MachineType.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -216,6 +224,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\AttachmentViewModel.cs" />
     <Compile Include="Models\MachineViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -279,6 +288,9 @@
     <Content Include="Views\Machine\AddEditMachine.cshtml" />
     <Content Include="Views\Machine\Index.cshtml" />
     <Content Include="Views\Machine\MachineDetail.cshtml" />
+    <Content Include="Views\Attachment\AddEditAttachment.cshtml" />
+    <Content Include="Views\Attachment\Index.cshtml" />
+    <Content Include="Views\Attachment\AttachmentDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -309,6 +321,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803120002475_added-key-attributes.resx">
       <DependentUpon>201803120002475_added-key-attributes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803120144211_attachment-tables.resx">
+      <DependentUpon>201803120144211_attachment-tables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

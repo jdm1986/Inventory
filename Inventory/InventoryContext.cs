@@ -14,5 +14,7 @@ namespace Inventory
 
         public virtual DbSet<MachineType> MachineTypes { get; set; }
         public virtual DbSet<Models.Machine> Machines { get; set; }
+        public virtual DbSet<AttachmentType> AttachmentTypes { get; set; }
+        public virtual DbSet<Attachment> Attachments { get; set; }
     }
 }

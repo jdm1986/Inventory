@@ -15,11 +15,11 @@ namespace Inventory.Migrations
 
         protected override void Seed(Inventory.InventoryContext context)
         {
-            context.MachineTypes.AddOrUpdate(
+            context.AttachmentTypes.AddOrUpdate(
                 t => t.TypeName,
-                new MachineType { TypeId = 1, TypeName = "Excavator" },
-                new MachineType { TypeId = 2, TypeName = "Dozer" },
-                new MachineType { TypeId = 3, TypeName = "Tractor" }
+                new AttachmentType { TypeId = 1, TypeName = "Excavator" },
+                new AttachmentType { TypeId = 2, TypeName = "Dozer" },
+                new AttachmentType { TypeId = 3, TypeName = "Tractor" }
             );
 
             context.SaveChanges();
@@ -34,6 +34,23 @@ namespace Inventory.Migrations
                 new Machine { MachineId = 6, MachineNum = 823, MachineMake = "Deere", MachineModel = "250G", Hours = 6500, Status = false, TypeId = 1, Photo = "https://lh3.googleusercontent.com/HIjJnQyv2tpq6Sg4JiMGDi2VTyJ-D3KmvxeL5iaXfLT06ks0YT1ZQqbEvqptxEPiKKTisq2T3tDR6tojq9yBT6ONVEGKhuc2Bo9JtVk0_6FHCeGZJuS_iZfIwrrf-tMI0n5P63eip-xKNKsCmJTdo5Kt2Hs-F6Zwy7pquG_WUowOKVH-hy71S1r-EhFG_jwhvhnDqNjojcGu8Yc_vLj88B__1FFflWQI5ECtF852nvNsEUBNaIWOJZ6RkSJZOF34fzfyXXfk-pFQjF7ixqHt2A0oLRqbVxcBdbzqZak97xfz95CK0jb3n8Eo_eDW7TXPCGED5F9lnjU_f7xOu9ypqdyjYken1TGbDUS696Ppt4ki7SO3yQZ3wfENAcTcdQO8NxPUweKRzycRWKiztVftjuZKWLtEA1-eX7I5kZA89nkz9Lclzre89aQAfAkKGxsskTbDPSq33V04vSFQ4U3eYSBTt5VGK3X3NMS7Xye2c2n06PplL08diZ21V13exPAy-np6-EFTKPhZ28Ftpr24TwMt9GCrwAHjlJTE2Kw4yq_FXlKUxR-qEG4xBedrig7ujXxjhr1vDFwVzkBzjFC1DAx-lJRZFxxwm4r980wH5YYqe7HivQ8aZ1E-QgFDQEn5Fyu1oF-yJ5mMDNKsvDmwYuMbUg4q29B6=w1266-h949-no" }
 
                 );
+            context.SaveChanges();
+
+            context.AttachmentTypes.AddOrUpdate(
+            t => t.TypeName,
+            new AttachmentType { TypeId = 1, TypeName = "Bucket" },
+            new AttachmentType { TypeId = 2, TypeName = "Hammer" },
+            new AttachmentType { TypeId = 3, TypeName = "Thumb" }
+        );
+
+            context.SaveChanges();
+
+            context.Attachments.AddOrUpdate(
+                a => a.AttachmentId,
+                new Attachment { AttachmentId = 1, AttachmentNum = 345, AttachmentMake = "CAT", AttachmentModel = "D8", Status = false, TypeId = 2, Photo = "" });
+ 
+
+              
             context.SaveChanges();
         }
     }

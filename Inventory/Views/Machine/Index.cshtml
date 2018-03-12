@@ -3,7 +3,7 @@
     ViewBag.Title = "Machines";
 }
 <h2>Machines</h2>
-<table class="table table-bordered table-condensed">
+<table class="table table-bordered table-condensed table-red">
     <thead>
         <tr>
             <th>Machine</th>
@@ -21,7 +21,7 @@
         @for (var i = 0; i < Model.Machines.Count; i++)
         {
             //change row color if Status = true ****
-            <tr class="@((Model.Machines[i].Status) ? "" : "highlight-row")">
+            <tr class="@((Model.Machines[i].Status) ? "no-highlight" : "highlight-row")">
                 <td>@Model.Machines[i].MachineMakeModel</td>
                 <td>@Model.Machines[i].MachineNum</td>
                 <td>@Model.Machines[i].TypeName</td>

@@ -25,8 +25,22 @@
     white-space: normal;
 }
 
+.table-red {
+    background-color: white;
+    
+}
+
+.table a {
+    color: #C01124;
+}
+.no-highlight {
+   
+}
+
+
 .highlight-row {
-    background-color: whitesmoke;
+    font-style: oblique;
+    
 }
 
 .tdlist {
@@ -46,6 +60,16 @@ textarea {
 #navbarli {
     color: #f8f8f8;
     font-family: 'Saira Condensed', sans-serif;
+}
+
+#navbarmain a:hover {
+    background-color: darkred;
+}
+
+.btn-primary {
+    background-color: #C01124;
+    border: none;
+    border-radius: 0px 0px;
 }
 
 footer {

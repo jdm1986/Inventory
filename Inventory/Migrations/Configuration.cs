@@ -37,17 +37,17 @@ namespace Inventory.Migrations
             context.SaveChanges();
 
             context.AttachmentTypes.AddOrUpdate(
-            t => t.TypeName,
-            new AttachmentType { TypeId = 1, TypeName = "Bucket" },
-            new AttachmentType { TypeId = 2, TypeName = "Hammer" },
-            new AttachmentType { TypeId = 3, TypeName = "Thumb" }
+            s => s.TypeName,
+            new AttachmentType { TypeId = 4, TypeName = "Bucket" },
+            new AttachmentType { TypeId = 5, TypeName = "Hammer" },
+            new AttachmentType { TypeId = 6, TypeName = "Thumb" }
         );
 
             context.SaveChanges();
 
             context.Attachments.AddOrUpdate(
                 a => a.AttachmentId,
-                new Attachment { AttachmentId = 1, AttachmentNum = 345, AttachmentMake = "CAT", AttachmentModel = "D8", Status = false, TypeId = 2, Photo = "" });
+                new Attachment { AttachmentId = 1, AttachmentNum = 193, AttachmentMake = "CAT", AttachmentModel = "24 in bucket", Status = false, TypeId = 4 });
  
 
               

@@ -5,10 +5,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace Inventory.Entities
+namespace Inventory.Models
 {
+    [Table("MachineType")]
     public class MachineType
     {
+        [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int TypeId { get; set; }
 

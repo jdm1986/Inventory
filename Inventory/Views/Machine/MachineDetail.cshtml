@@ -1,0 +1,21 @@
+﻿@model Inventory.Models.MachineViewModel
+@{
+    ViewBag.Title = "Photo Page";
+}
+ 
+<h4>@Model.MachineMakeModel #@Model.MachineNum</h4>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <img src="@Html.DisplayFor(m => m.Photo)" height="300" />
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            @Html.ActionLink("Return to Machine List", "Index", new { @class = "btn btn-primary" })
+        </div>
+    </div>
+</div>

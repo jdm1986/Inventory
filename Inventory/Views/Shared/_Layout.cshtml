@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - JOB Rentals Machine Inventory</title>
+    <title>@ViewBag.Title - Machine Inventory</title>
     <link href="~/Content/Site.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -19,7 +20,7 @@
                 <span class="icon-bar"></span>
             </button>
             
-            @Html.ActionLink("Machine Inventory", "Index", "Machine", new { area = "" }, new { @class = "navbar-brand", id = "navbarli" })
+            <div id = "brand" class = "navbar-brand">Machine Inventory</div>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">

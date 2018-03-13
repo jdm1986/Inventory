@@ -10,7 +10,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
+.index-hd {
+    font-family: 'Roboto Slab', serif;
+}
 
 .logo-index {
     text-align: center;
@@ -59,11 +61,24 @@ textarea {
 
 #navbarli {
     color: #f8f8f8;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 #navbarmain a:hover {
     background-color: darkred;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    background-color: transparent;
+    color: #f8f8f8;
+    cursor: default;
+}
+
+
+.navbar-brand {
+    color: #f8f8f8 !important;
+    font-family: 'Roboto Slab', serif; 
 }
 
 .btn-primary {

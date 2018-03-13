@@ -9,9 +9,10 @@
             <th>Attachment</th>
             <th>Fleet Number</th>
             <th>Type</th>
-            <th>Notes</th>
+            @*hide unnecessary columns at xs*@
+            <th class="hidden-xs">Notes</thclass="hidden-xs">
             <th>Available</th>
-            <th>Photo</th>
+            <th class="hidden-xs">Photo</thclass="hidden-xs">
             <th></th>
             <th></th>
         </tr>
@@ -19,12 +20,12 @@
     <tbody>
         @for (var i = 0; i < Model.Attachments.Count; i++)
         {
-            //change row color if Status = true ****
+            //change row text-style if Status = true 
             <tr class="@((Model.Attachments[i].Status) ? "" : "highlight-row")">
                 <td>@Model.Attachments[i].AttachmentMakeModel</td>
                 <td>@Model.Attachments[i].AttachmentNum</td>
                 <td>@Model.Attachments[i].TypeName</td>
-                    <td>@Model.Attachments[i].Notes</td>
+                    <td class="hidden-xs">@Model.Attachments[i].Notes</td>
                 @*//ternary directly below checks if Attachment checked available or not, modifies view row accordingly*@
                 <td>
                     @((Model.Attachments[i].Status) ? "Yes" : "No")
@@ -33,11 +34,11 @@
 
                 if (Model.Attachments[i].Photo == null)
                 {
-                    <td>No Photo</td>;
+                    <td class="hidden-xs" >No Photo</td>;
                 }
                 else
                 {
-                    <td>@Html.ActionLink("Photo", "AttachmentDetail", new { id = Model.Attachments[i].AttachmentId })</td>;
+                    <td class="hidden-xs">@Html.ActionLink("Photo", "AttachmentDetail", new { id = Model.Attachments[i].AttachmentId })</td>;
                 }
             }
 

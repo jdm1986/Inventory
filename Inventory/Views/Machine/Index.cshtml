@@ -8,9 +8,10 @@
         <tr>
             <th>Machine</th>
             <th>Fleet Number</th>
-            <th>Type</th>
-            <th>Hours</th>
-            <th>Notes</th>
+            @*these columns hidden at xs*@
+            <th class="hidden-xs">Type</th>
+            <th class="hidden-xs">Hours</th>
+            <th class="hidden-xs">Notes</th>
             <th>Available</th>
             <th></th>
             <th></th>
@@ -24,9 +25,9 @@
             <tr class="@((Model.Machines[i].Status) ? "no-highlight" : "highlight-row")">
                 <td>@Model.Machines[i].MachineMakeModel</td>
                 <td>@Model.Machines[i].MachineNum</td>
-                <td>@Model.Machines[i].TypeName</td>
-                <td>@Model.Machines[i].Hours</td>
-                <td>@Model.Machines[i].Notes</td>
+                <td class="hidden-xs">@Model.Machines[i].TypeName</td>
+                <td class="hidden-xs">@Model.Machines[i].Hours</td>
+                <td class="hidden-xs">@Model.Machines[i].Notes</td>
                 @*//ternary directly below checks if machine checked available or not, modifies view row accordingly*@
                 <td>
                     @((Model.Machines[i].Status) ? "Yes" : "No")

@@ -8,6 +8,7 @@ using Inventory.Models;
 
 namespace Inventory.Controllers
 {
+    [Authorize]
     public class AttachmentController : Controller
     {
         public void SetupViewBag()

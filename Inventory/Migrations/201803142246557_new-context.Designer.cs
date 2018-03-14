@@ -7,13 +7,13 @@ namespace Inventory.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class addedkeyattributes : IMigrationMetadata
+    public sealed partial class newcontext : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addedkeyattributes));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(newcontext));
         
         string IMigrationMetadata.Id
         {
-            get { return "201803120002475_added-key-attributes"; }
+            get { return "201803142246557_new-context"; }
         }
         
         string IMigrationMetadata.Source

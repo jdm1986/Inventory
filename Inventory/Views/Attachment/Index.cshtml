@@ -25,7 +25,7 @@
                 <td>@Model.Attachments[i].AttachmentMakeModel</td>
                 <td>@Model.Attachments[i].AttachmentNum</td>
                 <td>@Model.Attachments[i].TypeName</td>
-                    <td class="hidden-xs">@Model.Attachments[i].Notes</td>
+                <td class="hidden-xs">@Model.Attachments[i].Notes</td>
                 @*//ternary directly below checks if Attachment checked available or not, modifies view row accordingly*@
                 <td>
                     @((Model.Attachments[i].Status) ? "Yes" : "No")

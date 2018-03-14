@@ -189,20 +189,15 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AttachmentController.cs" />
     <Compile Include="Controllers\MachineController.cs" />
-    <Compile Include="Migrations\201803112354599_moved-data-models.cs" />
-    <Compile Include="Migrations\201803112354599_moved-data-models.Designer.cs">
-      <DependentUpon>201803112354599_moved-data-models.cs</DependentUpon>
+    <Compile Include="InventoryContext.cs" />
+    <Compile Include="Migrations\201803142246557_new-context.cs" />
+    <Compile Include="Migrations\201803142246557_new-context.Designer.cs">
+      <DependentUpon>201803142246557_new-context.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201803120002475_added-key-attributes.cs" />
-    <Compile Include="Migrations\201803120002475_added-key-attributes.Designer.cs">
-      <DependentUpon>201803120002475_added-key-attributes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803120144211_attachment-tables.cs" />
-    <Compile Include="Migrations\201803120144211_attachment-tables.Designer.cs">
-      <DependentUpon>201803120144211_attachment-tables.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attachment.cs" />
     <Compile Include="Models\Machine.cs" />
     <Compile Include="Models\AttachmentListViewModel.cs" />
@@ -212,16 +207,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="InventoryContext.cs" />
-    <Compile Include="Migrations\201803112344131_initial-mig.cs" />
-    <Compile Include="Migrations\201803112344131_initial-mig.Designer.cs">
-      <DependentUpon>201803112344131_initial-mig.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803112345536_updated-table-names.cs" />
-    <Compile Include="Migrations\201803112345536_updated-table-names.Designer.cs">
-      <DependentUpon>201803112345536_updated-table-names.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\AttachmentViewModel.cs" />
@@ -309,20 +294,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803112344131_initial-mig.resx">
-      <DependentUpon>201803112344131_initial-mig.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803112345536_updated-table-names.resx">
-      <DependentUpon>201803112345536_updated-table-names.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803112354599_moved-data-models.resx">
-      <DependentUpon>201803112354599_moved-data-models.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803120002475_added-key-attributes.resx">
-      <DependentUpon>201803120002475_added-key-attributes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803120144211_attachment-tables.resx">
-      <DependentUpon>201803120144211_attachment-tables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201803142246557_new-context.resx">
+      <DependentUpon>201803142246557_new-context.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

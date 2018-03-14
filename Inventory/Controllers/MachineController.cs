@@ -8,6 +8,7 @@ using Inventory.Models;
 
 namespace Machine.Controllers
 {
+    [Authorize]
     public class MachineController : Controller
     {
         public void SetupViewBag()

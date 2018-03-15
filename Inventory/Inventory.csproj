@@ -193,6 +193,7 @@
     <Compile Include="Controllers\AttachmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MachineController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="InventoryContext.cs" />
     <Compile Include="Migrations\201803142246557_new-context.cs" />
     <Compile Include="Migrations\201803142246557_new-context.Designer.cs">

@@ -191,6 +191,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AttachmentController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MachineController.cs" />
     <Compile Include="InventoryContext.cs" />
     <Compile Include="Migrations\201803142246557_new-context.cs" />
@@ -275,6 +276,7 @@
     <Content Include="Views\Attachment\AddEditAttachment.cshtml" />
     <Content Include="Views\Attachment\Index.cshtml" />
     <Content Include="Views\Attachment\AttachmentDetail.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

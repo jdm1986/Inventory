@@ -3,6 +3,7 @@
     ViewBag.Title = "Attachments";
 }
 <h2 class="index-hd">Attachments</h2>
+<h6 class="index-hd">Italicized entries are not currently available.</h6>
 <table class="table table-bordered table-condensed table-red">
     <thead>
         <tr>
@@ -12,7 +13,6 @@
             @*hide unnecessary columns at xs*@
             <th class="hidden-xs">Notes</th>
             <th>Available</th>
-            <th class="hidden-xs">Photo</th>
             <th></th>
             <th></th>
         </tr>
@@ -20,7 +20,7 @@
     <tbody>
         @for (var i = 0; i < Model.Attachments.Count; i++)
         {
-            //change row text-style if Status = true 
+            //change row text-style if Status = true
             <tr class="@((Model.Attachments[i].Status) ? "" : "highlight-row")">
                 <td>@Model.Attachments[i].AttachmentMakeModel</td>
                 <td>@Model.Attachments[i].AttachmentNum</td>
@@ -29,46 +29,39 @@
                 @*//ternary directly below checks if Attachment checked available or not, modifies view row accordingly*@
                 <td>
                     @((Model.Attachments[i].Status) ? "Yes" : "No")
-            </td>
-            @{
+                </td>
+                @{
 
-                if (Model.Attachments[i].Photo == null)
-                {
-                    <td class="hidden-xs" >No Photo</td>;
+                   
                 }
-                else
-                {
-                    <td class="hidden-xs">@Html.ActionLink("Photo", "AttachmentDetail", new { id = Model.Attachments[i].AttachmentId })</td>;
-                }
-            }
 
-            <td>@Html.ActionLink("Edit", "AttachmentEdit", new { id = Model.Attachments[i].AttachmentId })</td>
-            <td>
-                <a data-toggle="modal" href="@("#deleteAttachmentModal" + i)">Delete</a>
-                <div class="modal fade" id="@("deleteAttachmentModal" + i)" tabindex="-1" role="dialog">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            @using (Html.BeginForm("DeleteAttachment", "Attachment"))
-                            {
-                                <input type="hidden" value="@Model.Attachments[i].AttachmentId" name="AttachmentId" />
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Delete @Model.Attachments[i].AttachmentMakeModel</h4>
-                                </div>
-                                <div class="modal-body">
-                                    Are you sure you want to delete @Model.Attachments[i].AttachmentMakeModel?
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary">Yes</button>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                </div>
-                            }
+                <td>@Html.ActionLink("Edit", "AttachmentEdit", new { id = Model.Attachments[i].AttachmentId })</td>
+                <td>
+                    <a data-toggle="modal" href="@("#deleteAttachmentModal" + i)">Delete</a>
+                    <div class="modal fade" id="@("deleteAttachmentModal" + i)" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                @using (Html.BeginForm("DeleteAttachment", "Attachment"))
+                                {
+                                    <input type="hidden" value="@Model.Attachments[i].AttachmentId" name="AttachmentId" />
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Delete @Model.Attachments[i].AttachmentMakeModel</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        Are you sure you want to delete @Model.Attachments[i].AttachmentMakeModel?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-primary">Yes</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    </div>
+                                }
+                            </div>
                         </div>
                     </div>
-                </div>
-            </td>
-        </tr>
-    }
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
 <div class="col-sm-4">

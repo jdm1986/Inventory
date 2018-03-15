@@ -27,7 +27,9 @@
                 <li>@Html.ActionLink("Machines", "Index", "Machine", new { area = "" }, new { @id = "navbarli" })</li>
                 <li>@Html.ActionLink("Attachments", "Index", "Attachment", new { area = "" }, new { @id = "navbarli" })</li>
             </ul>
-            @Html.Partial("_LoginPartial")
+            <div id="navbarli">
+                @Html.Partial("_LoginPartial")
+            </div>
         </div>
     </div>
 </div>

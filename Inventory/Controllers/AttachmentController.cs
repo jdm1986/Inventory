@@ -8,7 +8,7 @@ using Inventory.Models;
 
 namespace Inventory.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class AttachmentController : Controller
     {
         public void SetupViewBag()

@@ -159,23 +159,23 @@ namespace Inventory.Migrations
 
             context.AttachmentTypes.AddOrUpdate(
             s => s.TypeName,
-            new AttachmentType { TypeId = 4, TypeName = "Bucket" },
-            new AttachmentType { TypeId = 5, TypeName = "Hammer" },
-            new AttachmentType { TypeId = 6, TypeName = "Thumb" }
+            new AttachmentType { TypeId = 1, TypeName = "Bucket" },
+            new AttachmentType { TypeId = 2, TypeName = "Hammer" },
+            new AttachmentType { TypeId = 3, TypeName = "Thumb" }
         );
 
             context.SaveChanges();
 
             context.Attachments.AddOrUpdate(
                 a => a.AttachmentId,
-                new Attachment { AttachmentId = 1, AttachmentNum = 193, AttachmentMake = "CAT", AttachmentModel = "24 in bucket", Status = true, TypeId = 4, Notes = "fits 315CL" },
-                new Attachment { AttachmentId = 2, AttachmentNum = 143, AttachmentMake = "AIM", AttachmentModel = "36 in bucket", Status = true, TypeId = 4 },
-                new Attachment { AttachmentId = 3, AttachmentNum = 133, AttachmentMake = "Allied", AttachmentModel = "AR160", Status = true, TypeId = 5, Notes = "fits 350G" },
-                new Attachment { AttachmentId = 4, AttachmentNum = 134, AttachmentMake = "Allied", AttachmentModel = "AR130", Status = true, TypeId = 5 },
-                new Attachment { AttachmentId = 5, AttachmentNum = 543, AttachmentMake = "Allied", AttachmentModel = "BR777", Status = true, TypeId = 5 },
-                new Attachment { AttachmentId = 6, AttachmentNum = 467, AttachmentMake = "Allied", AttachmentModel = "BR999", Status = true, TypeId = 5 },
-                new Attachment { AttachmentId = 7, AttachmentNum = 322, AttachmentMake = "Allied", AttachmentModel = "AR70", Status = false, TypeId = 5, Notes = "fits 18,000 lb exc" },
-                new Attachment { AttachmentId = 8, AttachmentNum = 654, AttachmentMake = "Allied", AttachmentModel = "AR70", Status = false, TypeId = 5 }
+                new Attachment { AttachmentId = 1, AttachmentNum = 193, AttachmentMake = "CAT", AttachmentModel = "24 in bucket", Status = true, TypeId = 1, Notes = "fits 315CL" },
+                new Attachment { AttachmentId = 2, AttachmentNum = 143, AttachmentMake = "AIM", AttachmentModel = "36 in bucket", Status = true, TypeId = 1 },
+                new Attachment { AttachmentId = 3, AttachmentNum = 133, AttachmentMake = "Allied", AttachmentModel = "AR160", Status = true, TypeId = 2, Notes = "fits 350G" },
+                new Attachment { AttachmentId = 4, AttachmentNum = 134, AttachmentMake = "Allied", AttachmentModel = "AR130", Status = true, TypeId = 2 },
+                new Attachment { AttachmentId = 5, AttachmentNum = 543, AttachmentMake = "Allied", AttachmentModel = "BR777", Status = true, TypeId = 2 },
+                new Attachment { AttachmentId = 6, AttachmentNum = 467, AttachmentMake = "Allied", AttachmentModel = "BR999", Status = true, TypeId = 2 },
+                new Attachment { AttachmentId = 7, AttachmentNum = 322, AttachmentMake = "Allied", AttachmentModel = "AR70", Status = false, TypeId = 2, Notes = "fits 18,000 lb exc" },
+                new Attachment { AttachmentId = 8, AttachmentNum = 654, AttachmentMake = "Allied", AttachmentModel = "AR70", Status = false, TypeId = 2 }
 
 
 

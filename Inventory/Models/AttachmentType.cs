@@ -16,5 +16,8 @@ namespace Inventory.Models
 
         [Required]
         public string TypeName { get; set; }
+
+        public ICollection<Attachment> Attachments { get; set; }
+
     }
 }

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Inventory.Models;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using Inventory;
-using Inventory.Models;
 
 namespace Inventory.Controllers
 {

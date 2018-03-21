@@ -1,4 +1,4 @@
-# Inventory - Work in Progress - Currently working through some database issues
+# Inventory
 C#/.NET Final Project March 2018
 
 After opening the app, you will be required to register with a username/password. 

@@ -22,7 +22,7 @@ namespace Inventory.Controllers
                 );
             }
         }
-
+        //List
         public ActionResult Index()
         {
             using (var machineContext = new InventoryContext())
@@ -48,7 +48,7 @@ namespace Inventory.Controllers
 
 
         }
-
+        //Detail
         public ActionResult AttachmentDetail(int id)
         {
             using (var machineContext = new InventoryContext())
@@ -73,7 +73,7 @@ namespace Inventory.Controllers
 
             return new HttpNotFoundResult();
         }
-
+        //Add
         public ActionResult AttachmentAdd()
         {
             SetupViewBag();
@@ -82,7 +82,7 @@ namespace Inventory.Controllers
 
             return View("AddEditAttachment", attachmentViewModel);
         }
-
+        //Add Post
         [HttpPost]
         public ActionResult AddAttachment(AttachmentViewModel attachmentViewModel)
         {
@@ -105,7 +105,7 @@ namespace Inventory.Controllers
             return RedirectToAction("Index");
 
         }
-
+        //Edit
         public ActionResult AttachmentEdit(int id)
         {
             SetupViewBag();
@@ -134,7 +134,7 @@ namespace Inventory.Controllers
             }
 
         }
-
+        //Edit Post
         [HttpPost]
         public ActionResult EditAttachment(AttachmentViewModel attachmentViewModel)
         {
@@ -161,7 +161,7 @@ namespace Inventory.Controllers
             }
 
         }
-
+        //Delete
         [HttpPost]
         public ActionResult DeleteAttachment(AttachmentViewModel attachmentViewModel)
         {

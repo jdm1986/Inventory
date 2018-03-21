@@ -22,7 +22,7 @@ namespace Machine.Controllers
                 );
             }
         }
-
+        //List
         public ActionResult Index()
         {
             using (var machineContext = new InventoryContext())
@@ -49,7 +49,7 @@ namespace Machine.Controllers
 
 
         }
-
+        //Detail
         public ActionResult MachineDetail(int id)
         {
             using (var machineContext = new InventoryContext())
@@ -75,7 +75,7 @@ namespace Machine.Controllers
 
             return new HttpNotFoundResult();
         }
-
+        //Add
         public ActionResult MachineAdd()
         {
             SetupViewBag();
@@ -84,7 +84,7 @@ namespace Machine.Controllers
 
             return View("AddEditMachine", machineViewModel);
         }
-
+        //Add Post
         [HttpPost]
         public ActionResult AddMachine(MachineViewModel machineViewModel)
         {
@@ -108,7 +108,7 @@ namespace Machine.Controllers
             return RedirectToAction("Index");
 
         }
-
+        //Edit
         public ActionResult MachineEdit(int id)
         {
             SetupViewBag();
@@ -138,7 +138,7 @@ namespace Machine.Controllers
             }
 
         }
-
+        //Edit Post
         [HttpPost]
         public ActionResult EditMachine(MachineViewModel machineViewModel)
         {
@@ -166,7 +166,7 @@ namespace Machine.Controllers
             }
 
         }
-
+        //Delete
         [HttpPost]
         public ActionResult DeleteMachine(MachineViewModel machineViewModel)
         {

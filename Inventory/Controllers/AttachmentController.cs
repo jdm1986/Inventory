@@ -18,7 +18,7 @@ namespace Inventory.Controllers
                 );
             }
         }
-        //List
+        //List - view table laying out properties in each AttachmentViewModel
         public ActionResult Index()
         {
             using (var machineContext = new InventoryContext())
@@ -44,7 +44,7 @@ namespace Inventory.Controllers
 
 
         }
-        //Detail
+        //Detail - grab Machine model where model Id == AttachmentViewModel Id
         public ActionResult AttachmentDetail(int id)
         {
             using (var machineContext = new InventoryContext())
@@ -69,7 +69,7 @@ namespace Inventory.Controllers
 
             return new HttpNotFoundResult();
         }
-        //Add
+        //Add AttachemntViewModel
         public ActionResult AttachmentAdd()
         {
             SetupViewBag();
@@ -78,7 +78,7 @@ namespace Inventory.Controllers
 
             return View("AddEditAttachment", attachmentViewModel);
         }
-        //Add Post
+        //Add Post - add Attachment model where model Id == AttachemntViewModel
         [HttpPost]
         public ActionResult AddAttachment(AttachmentViewModel attachmentViewModel)
         {
@@ -101,7 +101,7 @@ namespace Inventory.Controllers
             return RedirectToAction("Index");
 
         }
-        //Edit
+        //Edit AttachmentViewModel
         public ActionResult AttachmentEdit(int id)
         {
             SetupViewBag();
@@ -130,7 +130,7 @@ namespace Inventory.Controllers
             }
 
         }
-        //Edit Post
+        //Edit Post - Edit Attachment model where model Id == AttachmentViewModel Id
         [HttpPost]
         public ActionResult EditAttachment(AttachmentViewModel attachmentViewModel)
         {
@@ -157,7 +157,7 @@ namespace Inventory.Controllers
             }
 
         }
-        //Delete
+        //Delete Attachment model where model Id == AttachmentViewModel Id
         [HttpPost]
         public ActionResult DeleteAttachment(AttachmentViewModel attachmentViewModel)
         {

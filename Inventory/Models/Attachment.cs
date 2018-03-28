@@ -9,7 +9,7 @@ namespace Inventory.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int AttachmentId { get; set; }
-
+        //Fleet Number
         [Required]
         public int AttachmentNum { get; set; }
 

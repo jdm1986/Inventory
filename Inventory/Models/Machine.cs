@@ -9,7 +9,7 @@ namespace Inventory.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MachineId { get; set; }
-
+        //Fleet number
         [Required]
         public int MachineNum { get; set; }
 

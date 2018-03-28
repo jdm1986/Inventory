@@ -19,7 +19,7 @@ namespace Machine.Controllers
                 );
             }
         }
-        //List
+        //List - view table laying out properties of each MachineViewModel
         public ActionResult Index()
         {
             using (var machineContext = new InventoryContext())
@@ -46,7 +46,7 @@ namespace Machine.Controllers
 
 
         }
-        //Detail
+        //Grab machine with Id === id, build ViewModel, display details
         public ActionResult MachineDetail(int id)
         {
             using (var machineContext = new InventoryContext())
@@ -72,7 +72,7 @@ namespace Machine.Controllers
 
             return new HttpNotFoundResult();
         }
-        //Add
+        //Add new MachineViewModel
         public ActionResult MachineAdd()
         {
             SetupViewBag();
@@ -81,7 +81,7 @@ namespace Machine.Controllers
 
             return View("AddEditMachine", machineViewModel);
         }
-        //Add Post
+        //Add Post new MachineViewModel => new Machine.cs
         [HttpPost]
         public ActionResult AddMachine(MachineViewModel machineViewModel)
         {
@@ -105,7 +105,7 @@ namespace Machine.Controllers
             return RedirectToAction("Index");
 
         }
-        //Edit
+        //Edit MachineViewModel
         public ActionResult MachineEdit(int id)
         {
             SetupViewBag();
@@ -135,7 +135,7 @@ namespace Machine.Controllers
             }
 
         }
-        //Edit Post
+        //Edit Post - find Machine model based on MachineViewModel Id, update Machine model
         [HttpPost]
         public ActionResult EditMachine(MachineViewModel machineViewModel)
         {
@@ -163,7 +163,7 @@ namespace Machine.Controllers
             }
 
         }
-        //Delete
+        //Delete Machine model where MachineId == MachineViewModel
         [HttpPost]
         public ActionResult DeleteMachine(MachineViewModel machineViewModel)
         {

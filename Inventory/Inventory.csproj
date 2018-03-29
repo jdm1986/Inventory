@@ -199,6 +199,10 @@
     <Compile Include="Migrations\201803212218158_initial-migration.Designer.cs">
       <DependentUpon>201803212218158_initial-migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803291259027_removed-required.cs" />
+    <Compile Include="Migrations\201803291259027_removed-required.Designer.cs">
+      <DependentUpon>201803291259027_removed-required.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attachment.cs" />
     <Compile Include="Models\Machine.cs" />
@@ -298,6 +302,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201803212218158_initial-migration.resx">
       <DependentUpon>201803212218158_initial-migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803291259027_removed-required.resx">
+      <DependentUpon>201803291259027_removed-required.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

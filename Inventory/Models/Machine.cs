@@ -10,13 +10,10 @@ namespace Inventory.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MachineId { get; set; }
         //Fleet number
-        [Required]
         public int MachineNum { get; set; }
 
-        [Required]
         public string MachineMake { get; set; }
 
-        [Required]
         public string MachineModel { get; set; }
         public int Hours { get; set; }
         public string Notes { get; set; }

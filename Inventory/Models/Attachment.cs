@@ -13,10 +13,8 @@ namespace Inventory.Models
         [Required]
         public int AttachmentNum { get; set; }
 
-        [Required]
         public string AttachmentMake { get; set; }
 
-        [Required]
         public string AttachmentModel { get; set; }
         public string Notes { get; set; }
         public bool Status { get; set; }

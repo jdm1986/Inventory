@@ -86,7 +86,7 @@ namespace Inventory.Controllers
             {
                 var attachment = new Inventory.Models.Attachment
                 {
-                    AttachmentNum = attachmentViewModel.AttachmentNum.Value,
+                    AttachmentNum = attachmentViewModel.AttachmentNum,
                     AttachmentMake = attachmentViewModel.AttachmentMake,
                     AttachmentModel = attachmentViewModel.AttachmentModel,
                     TypeId = attachmentViewModel.TypeId,
@@ -140,7 +140,7 @@ namespace Inventory.Controllers
 
                 if (attachment != null)
                 {
-                    attachment.AttachmentNum = attachmentViewModel.AttachmentNum.Value;
+                    attachment.AttachmentNum = attachmentViewModel.AttachmentNum;
                     attachment.AttachmentMake = attachmentViewModel.AttachmentMake;
                     attachment.AttachmentModel = attachmentViewModel.AttachmentModel;
                     attachment.TypeId = attachmentViewModel.TypeId;

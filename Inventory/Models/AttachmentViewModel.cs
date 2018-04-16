@@ -7,7 +7,7 @@ namespace Inventory.Models
         public int? AttachmentId { get; set; }
 
         [DisplayName("Fleet Number")]
-        public int? AttachmentNum { get; set; }
+        public string AttachmentNum { get; set; }
 
         [DisplayName("Make")]
         public string AttachmentMake { get; set; }

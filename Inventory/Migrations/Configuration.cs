@@ -29,10 +29,10 @@ namespace Inventory.Migrations
                 new Machine
                 {
                     MachineId = 1,
-                    MachineNum = 578,
+                    MachineNum = "578",
                     MachineMake = "Deere",
                     MachineModel = "9520",
-                    Hours = 8510,
+                    Hours = "8510",
                     Status = true,
                     TypeId = 3,
                     Photo = "https://lh3.googleusercontent.com/xWeqYYron9HBJYUULnViQapIkxKKwv4zYQHI0O2TegUio8omn9gPrRs04JjM8_CQoG6ELblz7Qb84dRc6vvYrCX6zHGETdcCrsXpjifaaP8GkLJBTR-bD8ViDHbliCXpWX7C3s4YdbOzshg8Es0Zr2mxZycdnARnHR49FIngtbI0cngygx2WsLcJZ6LsGnnQwNN9rztuJMkTwxGx4V_3p2aOSDkyI9nej1lvzEx6g8UCA2khxJkum_DUsR5xysCN3I5tX6bZ3SGW1XFuLBr3s6i6mq7wUg5ZY4aQumBNlcVwVixBAAjCngSE2WuWOFB4ruzJjSqaaWqepH7jqfr8Eb6s7vqMyTtXW6up2H-CWmnfx8iRVzUDJqP8dzBRi8ipN9SkcT8dck3UQrIdeqwDgmFZMKEmswsNt6JO5N126rYDDJtnbjXjKlZhHQ1kMoKLLE9yYjBOJDxk4Jurd-gD1APxZpXihZYmzMTBdA1S_NAnPFuogErvFAlaHCvRS_3ZKEkYuxUQ8ZV-20lEXprq7yjfASVAHeFbj-RHaQFXQ4q0xbSLEIP19gybVu_kGUVlEJrNXovety_aLNgOll66_f4o6SFBhsXEGe60qNdIWVxcNpCPnx6sHKhG-nn_lkATAKmeLt-VlEnG3V0nyDqCESUFXhchaC0o=w901-h675-no"
@@ -40,10 +40,10 @@ namespace Inventory.Migrations
                 new Machine
                 {
                     MachineId = 2,
-                    MachineNum = 647,
+                    MachineNum = "647",
                     MachineMake = "CAT",
                     MachineModel = "D8T",
-                    Hours = 6500,
+                    Hours = "6500",
                     Status = false,
                     TypeId = 2,
                     Notes = "w/ ripper",
@@ -52,10 +52,10 @@ namespace Inventory.Migrations
                 new Machine
                 {
                     MachineId = 3,
-                    MachineNum = 658,
+                    MachineNum = "658",
                     MachineMake = "Komatsu",
                     MachineModel = "PC450",
-                    Hours = 7003,
+                    Hours = "7003",
                     Status = true,
                     TypeId = 1,
                     Notes = "Trimble ready",
@@ -64,10 +64,10 @@ namespace Inventory.Migrations
                 new Machine
                 {
                     MachineId = 4,
-                    MachineNum = 768,
+                    MachineNum = "768",
                     MachineMake = "Deere",
                     MachineModel = "250G",
-                    Hours = 4379,
+                    Hours = "4379",
                     Status = true,
                     TypeId = 1,
                     Notes = "plumbed for hammer",
@@ -76,10 +76,10 @@ namespace Inventory.Migrations
                 new Machine
                 {
                     MachineId = 5,
-                    MachineNum = 769,
+                    MachineNum = "769",
                     MachineMake = "Deere",
                     MachineModel = "750J LGP",
-                    Hours = 3189,
+                    Hours = "3189",
                     Status = false,
                     TypeId = 2,
                     Photo = "https://lh3.googleusercontent.com/utoian58jD7U1CVSU2oPSYkVhF0tnTGluFUDm8RDqR07Tt-vjTVMoE5nCOXwn7T74vkfx1v5ZR27-9zED2htC3vwUhNhfxubIQuiZxkNlNzesVm7XdvhkuxO3CgSmgDRObLX--7K1XJaR1wNGJ0lpON-1NYiHQuUMBsaJ6q5ijw3_ZTbMYy-wHHwxm_QTsAVZr4-QWu8gBaA9hpTuTizUzxhPeKH0bpABo9r14dk98Cazo1D8dFddlHXS7XnTUK310UFFylRHLJWqCYodKoHbQ92ohQCIykzFIX8lLB2XXvbGlgNmr2Ey7mEBQ4eEWHHPHoCj11GEPYkP2jKKXn-_cu9Fj4kvjOxxuVZxX8WAV76wUKVGvD87Yv75V1wMuVqbdKTOc1dliTJxSPPb1sasLuT2O9o65G06G7yEMm9gYsSGSOcQxgdvSwZukZIu2lWCWG8Qi8awbS5Iab-SrDhmmRlJx1vjdLgob5kkP12FfGazhKyZyLAqWZN6OW7IdYzYQp5-vNV0xqhSonLz_LmdzU7ICJDDGyPwUoIHi6Cb_Y3rl5GYWhXcaKJU-N85wUPm4DxzJhbBkrtK4Zx8Gop8MwiFky7yow9Tp4FXr-lfJba8Lx_an0qS-7zKcuWE5Sp5pSDbCbJmnWQ7XZ7GMblxtPKJ0HhWwdL=w504-h378-no"
@@ -87,10 +87,10 @@ namespace Inventory.Migrations
                 new Machine
                 {
                     MachineId = 6,
-                    MachineNum = 804,
+                    MachineNum = "804",
                     MachineMake = "Deere",
                     MachineModel = "250G",
-                    Hours = 3534,
+                    Hours = "3534",
                     Status = true,
                     TypeId = 1,
                     Notes = "aux hydraulics",
@@ -99,10 +99,10 @@ namespace Inventory.Migrations
                 new Machine
                 {
                     MachineId = 7,
-                    MachineNum = 790,
+                    MachineNum = "790",
                     MachineMake = "Deere",
                     MachineModel = "750J LGP",
-                    Hours = 3011,
+                    Hours = "3011",
                     Status = true,
                     TypeId = 2,
                     Photo = "https://lh3.googleusercontent.com/WYgoeHFK0hlLYSlhcoU9NYw3RqQ9KQgXLBur28ZiNDnqEeE9K43oEb5GlgUC1WnEmMO-7D1vWd0Ou3ufPLtdUD1vOdAB7e-cCmD-IOvlrt85TJ8DW_S4f6TcnZbSo9o6dTK0OMAJg--YdeoAqsxzXC1N7XD4WU9LsMI3eRa1pKfbHeZoT37b7ePk8yFR893wADzUPu-1KIqtdCKLInwbfoyPGDcD7nGBh6-HRcRg8vj9XTwVZVL0-aacCnpXvHLaAvlMh2VpSEHtsGIS-KfiCnz4ZboqGqCC4eNGxMHxwZ63fU7XBJ2iG83x0foro-Tdg2GUw_9BhOrBS8_k85NdMd0Izffcap-zYtVXnFTChr8nS7xzzzmBHRcPhJhAjNITdfI-ki-i3eO9KrfHwHni3gsh1-LbBHGYx2zKqCskfZHKzDnRAIKM-eWohnXK-tZV28qtj66Flih13dR6dprp9U8vDzuMtC7Dl_1EmtxJLKosaGqXM-XgfKrW-9iJ02Fm1hHQoZqS2lUALwu2vIdZ8J7KhZ9lSi9F1yaW_vGOJ0E7ECuQS7RT8cS8kb6gXy6B43fYIoxIq7dZ4wRvUD7SY51wF6fLQgNYjPrRU5z7ms354tcWqSjuHF-ObYlFJXdhOuDgV3X6VfWSReerk_SdJw80aiV8-Qqe=w935-h675-no"
@@ -110,10 +110,10 @@ namespace Inventory.Migrations
                 new Machine
                 {
                     MachineId = 8,
-                    MachineNum = 792,
+                    MachineNum = "792",
                     MachineMake = "Deere",
                     MachineModel = "850K",
-                    Hours = 2730,
+                    Hours = "2730",
                     Status = true,
                     TypeId = 2
 
@@ -121,10 +121,10 @@ namespace Inventory.Migrations
                 new Machine
                 {
                     MachineId = 9,
-                    MachineNum = 905,
+                    MachineNum = "905",
                     MachineMake = "CAT",
                     MachineModel = "D5K LGP",
-                    Hours = 2275,
+                    Hours = "2275",
                     Status = true,
                     TypeId = 2,
                     Photo = "https://lh3.googleusercontent.com/ATK6AvKTQUK5rR69Cw7MXpBdLA-DpocBMrBcvucFTJCJMYkMoSTcqpGfRgT7gkB55VZikoIgTLLUmZ9zV2Hpzf6e6EfM0TqR3D-u7W81Gb_-4KjLs7IDm1qyEcRWpEoh0Eym0WsaksbYNSZRFAfdDaiEbGIktVK0txAqSx59hypwRjhPslYgcU1s6gYwkiOBNJoDanwwMbzCOfDuLRVwdYv8NolxxMWjgbLEEkoM-mofRMhxsfvvLm26QePJiauDt2Hnr05NlgUmF4epnl7VQTiLaOl1NJnImnsehWOJdmuN2n00qUQ_BV-5ELEIltVXiBaBxkYAAM1v6XZWqueq4XqZ0Z5YSoEfB0rkk41Sy07lT5TnlU-v1SVSf8fqnNfYk9Y8wbRTUkhMzJ0DY8Iam2q8ayx7BEQfUzRdlfWxHDCOnnHz0Bzn4DCuYdsuNmycs2DNE2bPcKqHALHx-48avKQnfZEgxkhNR7iwG_X8rxxACDlnvpXK_oFA6IfUSEqjBmjom3OkuFsf1QuqtEyUR1EeCFliG5zX19dmNdZINr77_ZZvZA4qAg0eF0T-yEgM64dJM5xjB-qWC5MlX-rVR62cw-eUdgEGDbQTn1ItcXZ4AY-ZqTE_6DYIFKdxgylJ3VAiJLO_6hRbVug3xJpq0rB_CScYQVJP=w1316-h987-no"
@@ -132,10 +132,10 @@ namespace Inventory.Migrations
                 new Machine
                 {
                     MachineId = 10,
-                    MachineNum = 910,
+                    MachineNum = "910",
                     MachineMake = "Deere",
                     MachineModel = "450J LT",
-                    Hours = 692,
+                    Hours = "692",
                     Status = true,
                     TypeId = 2,
                     Photo = "https://lh3.googleusercontent.com/5T0_ThDF1nkKcT1vQzW_aFOj_KmI0QFygNEriRRIbG7jfPLHuHunsh4C3cmkRKblz7bajlIaTLLkUhlWA83iaitj2BofMnp5HZ10flEZE_CiYW7Z86HRHWj2fDlAe7aeLT_7r0XAp2DDQn_NhvwweWCu3sWuDvii_DDsAEfxmS0CVS4pY1pj7aHo2eB0d9YIxEUdMXu8Bbdok0Yr0hxXkyopNKzyIx2Mihwij3JpuqZl1HvTymoCu_ZVCaZM_9UkKthoqbnJjRzHxMa0NbrQNRiOTw0TQ9Ity-DnnTsP8bAD3W1UBdtP8pWdgyTBqWBLvhmeJNd5xIWYnW8qhZ6ml8fGDIKn_IFGKpJA13TpBJaR4KlkaG3HEDy2sD0JC7MOT6SkvzLcKce12ZCkqe1X9agFrrUGxotXAsyJQUJW0cyhoxsfd9MLqNsVJhMTprGz1OizoHS5Xt8oiyJRPP5hNHTK_jzHdYgvCjENSwx2l_dDhBYcJUEJtskF7WfS-22TB2wLB5iJkqhYzOqM97lz-YJh24VGAl_JkHCmjQfhL6X8wk7rnSVgUjcSg4o8Yn81BeiqeGddR9t4Cq6UQhQA0trUCawzufp_UBWjTFoN6wC1POreM7beMmTmS_2d-dYTrSenDIxv7KEMphO8mHiIjvuMBDJ-We9h=w1316-h987-no"
@@ -143,10 +143,10 @@ namespace Inventory.Migrations
                 new Machine
                 {
                     MachineId = 11,
-                    MachineNum = 918,
+                    MachineNum = "918",
                     MachineMake = "Deere",
                     MachineModel = "350G",
-                    Hours = 576,
+                    Hours = "576",
                     Status = false,
                     TypeId = 1,
                     Notes = "plumbed for hammer",
@@ -168,14 +168,14 @@ namespace Inventory.Migrations
 
             context.Attachments.AddOrUpdate(
                 a => a.AttachmentId,
-                new Attachment { AttachmentId = 1, AttachmentNum = 193, AttachmentMake = "CAT", AttachmentModel = "24 in bucket", Status = true, TypeId = 1, Notes = "fits 315CL" },
-                new Attachment { AttachmentId = 2, AttachmentNum = 143, AttachmentMake = "AIM", AttachmentModel = "36 in bucket", Status = true, TypeId = 1 },
-                new Attachment { AttachmentId = 3, AttachmentNum = 133, AttachmentMake = "Allied", AttachmentModel = "AR160", Status = true, TypeId = 2, Notes = "fits 350G" },
-                new Attachment { AttachmentId = 4, AttachmentNum = 134, AttachmentMake = "Allied", AttachmentModel = "AR130", Status = true, TypeId = 2 },
-                new Attachment { AttachmentId = 5, AttachmentNum = 543, AttachmentMake = "Allied", AttachmentModel = "BR777", Status = true, TypeId = 2 },
-                new Attachment { AttachmentId = 6, AttachmentNum = 467, AttachmentMake = "Allied", AttachmentModel = "BR999", Status = true, TypeId = 2 },
-                new Attachment { AttachmentId = 7, AttachmentNum = 322, AttachmentMake = "Allied", AttachmentModel = "AR70", Status = false, TypeId = 2, Notes = "fits 18,000 lb exc" },
-                new Attachment { AttachmentId = 8, AttachmentNum = 654, AttachmentMake = "Allied", AttachmentModel = "AR70", Status = false, TypeId = 2 }
+                new Attachment { AttachmentId = 1, AttachmentNum = "193", AttachmentMake = "CAT", AttachmentModel = "24 in bucket", Status = true, TypeId = 1, Notes = "fits 315CL" },
+                new Attachment { AttachmentId = 2, AttachmentNum = "143", AttachmentMake = "AIM", AttachmentModel = "36 in bucket", Status = true, TypeId = 1 },
+                new Attachment { AttachmentId = 3, AttachmentNum = "133", AttachmentMake = "Allied", AttachmentModel = "AR160", Status = true, TypeId = 2, Notes = "fits 350G" },
+                new Attachment { AttachmentId = 4, AttachmentNum = "134", AttachmentMake = "Allied", AttachmentModel = "AR130", Status = true, TypeId = 2 },
+                new Attachment { AttachmentId = 5, AttachmentNum = "543", AttachmentMake = "Allied", AttachmentModel = "BR777", Status = true, TypeId = 2 },
+                new Attachment { AttachmentId = 6, AttachmentNum = "467", AttachmentMake = "Allied", AttachmentModel = "BR999", Status = true, TypeId = 2 },
+                new Attachment { AttachmentId = 7, AttachmentNum = "322", AttachmentMake = "Allied", AttachmentModel = "AR70", Status = false, TypeId = 2, Notes = "fits 18,000 lb exc" },
+                new Attachment { AttachmentId = 8, AttachmentNum = "654", AttachmentMake = "Allied", AttachmentModel = "AR70", Status = false, TypeId = 2 }
 
 
 

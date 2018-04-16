@@ -11,7 +11,7 @@ namespace Inventory.Models
         public int? MachineId { get; set; }
 
         [DisplayName("Fleet Number")]
-        public int? MachineNum { get; set; }
+        public string MachineNum { get; set; }
 
         [DisplayName("Make")]
         public string MachineMake { get; set; }
@@ -20,7 +20,7 @@ namespace Inventory.Models
         public string MachineModel { get; set; }
 
         [DisplayName("Hours")]
-        public int? Hours { get; set; }
+        public string Hours { get; set; }
 
         [DisplayName("Type")]
         public int? TypeId { get; set; }

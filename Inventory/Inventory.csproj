@@ -203,6 +203,10 @@
     <Compile Include="Migrations\201803291259027_removed-required.Designer.cs">
       <DependentUpon>201803291259027_removed-required.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804162147220_hoursnumtostring.cs" />
+    <Compile Include="Migrations\201804162147220_hoursnumtostring.Designer.cs">
+      <DependentUpon>201804162147220_hoursnumtostring.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attachment.cs" />
     <Compile Include="Models\Machine.cs" />
@@ -305,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803291259027_removed-required.resx">
       <DependentUpon>201803291259027_removed-required.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804162147220_hoursnumtostring.resx">
+      <DependentUpon>201804162147220_hoursnumtostring.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

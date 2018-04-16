@@ -11,7 +11,7 @@ namespace Inventory.Models
         public int AttachmentId { get; set; }
         //Fleet Number
         [Required]
-        public int AttachmentNum { get; set; }
+        public string AttachmentNum { get; set; }
 
         public string AttachmentMake { get; set; }
 

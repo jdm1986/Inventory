@@ -89,11 +89,11 @@ namespace Machine.Controllers
             {
                 var machine = new Inventory.Models.Machine
                 {
-                    MachineNum = machineViewModel.MachineNum.Value,
+                    MachineNum = machineViewModel.MachineNum,
                     MachineMake = machineViewModel.MachineMake,
                     MachineModel = machineViewModel.MachineModel,
                     TypeId = machineViewModel.TypeId,
-                    Hours = machineViewModel.Hours.Value,
+                    Hours = machineViewModel.Hours,
                     Notes = machineViewModel.Notes,
                     Status = machineViewModel.Status,
                     Photo = machineViewModel.Photo
@@ -145,11 +145,11 @@ namespace Machine.Controllers
 
                 if (machine != null)
                 {
-                    machine.MachineNum = machineViewModel.MachineNum.Value;
+                    machine.MachineNum = machineViewModel.MachineNum;
                     machine.MachineMake = machineViewModel.MachineMake;
                     machine.MachineModel = machineViewModel.MachineModel;
                     machine.TypeId = machineViewModel.TypeId;
-                    machine.Hours = machineViewModel.Hours.Value;
+                    machine.Hours = machineViewModel.Hours;
                     machine.Notes = machineViewModel.Notes;
                     machine.Status = machineViewModel.Status;
                     machine.Photo = machineViewModel.Photo;
